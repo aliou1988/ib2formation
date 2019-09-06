@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- lES BALISES DE TITRE -->
+    <!-- Pas dépacer H4 ou 5max -->
+    <!-- une seul h1 par page HTML, question de référencement -->
+    <h1>Titre principal</h1>
+    <h2>titre 2</h2>
+    <h3>titre 3</h3>
+    <h4>titre 4</h4>
+    <h5>titre 5</h5>
+    <h6>titre 6</h6>
+
+    <!-- bALISE POUR LE TEXTE -->
+    <p>Lorem ipsum dolor <b>texte en gras</b> amet consectetur <i>texte en italique</i>adipisicing elit. Earum, delectus iusto <u>texte souligné</u>debitis porro rerum enim sint quos nam fugit atque voluptatem laboriosam beatae odit velit corrupti similique ad corporis nulla.</p>
+
+    <!-- Balises pour les listes -->
+    <!-- ordinated List -->
+    <ol>
+        <!-- Liste Item -->
+        <li>lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+        
+    </ol>
+
+    <ul>
+            <li>lorem</li>
+            <li>Ipsum</li>
+            <li>Dolor</li>
+
+    </ul>
+
+    <!-- Les boutons et les liens -->
+    <button>Je suis un bouton</button>
+    <!-- blank row; à proscrire -> du style -> CSS -->
+    <br>
+    <a href="http://www.google.com" target="_blank"> Lien vers Google</a>
+
+    <!-- Les Tableaux -->
+    <table>
+        <caption>titre du tableau</caption>
+        <!-- table row, pour ajouter une ligne
+        Table Data
+        Table Head (nouveau tableau pour titre de colonnes) -->
+        <tr>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JS</th>
+        </tr>
+        <tr>
+            <td colspan="3"><b>une seule collone de 3, prend la place de toute la ligne et pas d'une seule case</b></td>
+        </tr>
+        <tr>
+            <td>3/5</td>
+            <td>4/5</td>
+            <td>5/5</td>
+        </tr>
+        <tr>
+            <td>3/5</td>
+            <td>4/5</td>
+            <td>5/5</td>
+        </tr>
+        <tr>
+            <td>3/5</td>
+            <td>4/5</td>
+            <td>5/5</td>
+        </tr>
+
+        <!-- Les Formulaires -->
+        <form action="#" method="POST">
+            <fieldset>
+                <!-- <label for="userId">Votre identifiant</label> -->
+                <!-- name="user_id" permet d'authentifier l'input
+                placeholder    affiche un text à l'intérieur et qui s'efface quand l'utilisateur tape qq chose-->
+                <input type="text" name="user" id="userId" placeholder="USER">
+
+                <!-- <label for="">Votre mot de passe</label> -->
+                <input type="password" name="password" id="passwordId" placeholder="MDP">
+            </fieldset>
+
+            <fieldset>
+                <!-- balise INPUT est autofermante -->
+                <input type="checkbox"> ME connecter automatiquement
+            </fieldset>
+
+            <button type="submit">Connexion</button>
+
+        </form>
+
+
+    </table>
+
+
+</body>
+</html>

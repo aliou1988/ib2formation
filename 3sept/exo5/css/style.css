@@ -1,0 +1,51 @@
+/* 
+DISPLAY
+*/
+   
+    *{
+        padding: 0rem;
+        margin: 0rem;
+
+    }
+
+
+    /* unique raison où on peut appeler la balise html */
+    html{
+        /* Passer d'une base 16 à une base 10 */
+        font-size: 60.5%;
+    }
+
+    body{
+        font-size: 2rem;
+    }
+
+    ul{
+   border: .5rem solid salmon;
+        
+    }
+
+    li{
+        display: inline-block;
+    }
+
+    a{
+        text-decoration: none;
+        padding: 3rem;
+        display: inline-block;
+        color: white;
+        background-color: grey;
+        
+        /* GERER LA TRANSITION */
+        transition: all 1s;
+    }
+
+
+
+
+    /* SELECTIONNER L'ETAT HOVER D'UNE BALISE */
+    a:hover{
+        background-color: aqua;
+        font-size: 10rem;
+        transform: rotateX(680deg)
+    }
+/**/

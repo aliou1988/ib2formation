@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exo3 : Fonction asynchrone GET et POST</title>
+    </head>
+    <body>
+        <h1>Exo2 : Fonction asynchrone</h1>
+        <script>
+            const asyncFetch = async (methode, path) => {
+                // Méthode GET => récupérer des données
+                if( methode === 'GET' ){
+                    // Lancer la requête
+                    const apiResponse = await fetch(path);
+                    
+                    // Vérifier le status de la requête
+                    switch(apiResponse.status){
+                        case 200:
+                            // Extraire les données de la requête et retourner une Promise
+                            const jsonData = await apiResponse.json();
+                            return Promise.resolve(jsonData);
+                        break;
+                        default:
+                            // Retourner l'erreur en Promise
+                            return Promise.reject(apiResponse);
+                        break;
+                    };
+                }
+                // Méthode POST => envoyer des doonnées
+                else if(methode === 'PUT'){
+                    // Configurer la requête
+                    const options = {
+                        method: 'PUT',
+                        headers:{
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ title: 'Julien', body: 'Noyer', userId: 1 })
+                    };
+                    const apiResponse = await fetch(path, options)
+                    const jsonData = await apiResponse.json();
+                    return Promise.resolve(jsonData);
+                }                
+            };
+            asyncFetch('POST', 'https://jsonplaceholder.typicode.com/posts/')
+            .then( apiResponse => {
+                console.log(apiResponse);
+            })
+            .catch( apiError => {
+                console.error(apiError);
+            });
+        </script>
+    </body>
+</html>

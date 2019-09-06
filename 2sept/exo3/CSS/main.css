@@ -1,0 +1,21 @@
+/* 
+Reset CSS
+*/
+*{
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+img{
+    width: 50px;
+}
+
+header, section{
+    margin-bottom: 40px;
+}
+/**/

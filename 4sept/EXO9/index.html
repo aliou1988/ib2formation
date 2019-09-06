@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exo 9 moyenne</title>
+       
+    </head>
+    <body>
+     <button> Ajouter un bouton</button>
+
+        <script>
+        
+        /*
+        Declaration
+
+        */
+        let note = [];
+        let myButton = document.querySelector('button');
+
+        //
+         /*
+          capter le clic sur bouton
+
+         */
+          myButton.addEventListener('click',()=>{
+             let newNote= prompt('Ajouter une note');
+             let intNote=parseInt(newNote);
+            //  VERIFIER LA NOTE
+
+            if(intNote.toString()=='NaN'|| intNote>20){
+                alert('on n'a dit une note entre 0 et 20!');
+            }
+            
+          });
+
+    //    
+        </script>
+    </body>
+</html>

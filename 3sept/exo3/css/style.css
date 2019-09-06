@@ -1,0 +1,33 @@
+/* 
+DISPLAY
+*/
+   
+    *{
+        padding: 0rem;
+        margin: 0rem;
+
+    }
+
+
+    /* unique raison où on peut appeler la balise html */
+    html{
+        /* Passer d'une base 16 à une base 10 */
+        font-size: 60.5%;
+    }
+
+    body{
+        font-size: 2rem;
+    }
+
+    ul{
+   border: .5rem solid salmon;
+        
+    }
+
+    li{
+        display: inline-block;
+        margin: 3rem;
+
+    }
+
+/**/

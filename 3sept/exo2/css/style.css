@@ -1,0 +1,30 @@
+/* 
+MARGES
+*/
+   
+    *{
+        padding: 0rem;
+        margin: 0rem;
+
+    }
+
+
+    /* unique raison où on peut appeler la balise html */
+    html{
+        /* Passer d'une base 16 à une base 10 */
+        font-size: 60.5%;
+    }
+
+    body{
+        font-size: 2rem;
+    }
+
+    ul{
+        width: 10rem;
+        border: .5rem solid peru;
+        padding: 5rem 10rem;
+        margin: 10rem auto;
+        
+    }
+
+/**/
